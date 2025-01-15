@@ -1,0 +1,146 @@
+
+
+nav{
+    position: absolute;
+    z-index: 2;
+    top:10px;
+    left: 10px;
+    height: 10vw;
+}
+
+h2{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+}
+
+p{
+    font-family: Arial;
+    color: white;
+    font-size: 100%;
+}
+
+.section1{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 10px;
+    position: relative;
+}
+
+.image{
+    filter: drop-shadow(0 0 0.75rem rgba(255, 255, 255, 0.415));
+    overflow: hidden;
+    height: 100%;
+}
+
+.fond{
+    border-radius: 10px;
+    width: 100%;
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 11%, 75% 11%, 67% 0);
+    height: 45vw;
+    overflow-y: hidden;
+}
+
+.titre{
+    font-family: "Azonix";
+    color: white;
+    font-size: 7vw;
+    text-align: start;
+    position: absolute;
+    z-index: 10;
+    top: 20%;
+    left: 10%;
+    font-variant: small-caps;
+}
+
+.titre2{
+    font-family: "Azonix";
+    color: black;
+    font-size: 7vw;
+    text-align: start;
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    right: 15%;
+    font-variant: small-caps;
+}
+
+.titre3{
+    font-family: "Azonix";
+    color: rgba(255, 255, 255, 0.159);
+    font-size: 12.5vw;
+    text-align: start;
+    position: absolute;
+    left: 0;
+    top: -2.5%;
+    font-variant: small-caps;
+    z-index: 9;
+}
+
+.titre4{
+    font-family: "Azonix";
+    color: rgba(0, 0, 0, 0.166);
+    font-size: 15vw;
+    text-align: start;
+    position: absolute;
+    top: 20%;
+    right: 0;
+    font-variant: small-caps;
+    z-index: 9;
+}
+
+.menu2{
+    position: absolute;
+    top: 10px;
+    left: 75%;
+    width: 23vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba( 255, 255, 255, 0.2 );
+    backdrop-filter: blur( 2.5px );
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 0.5vw;
+    margin-right: 10px;
+    height: 7vh;
+}
+
+.logo{
+    width: 2.5vw;
+    height: 5vh;
+    cursor: pointer;
+}
+.logo2{
+    width: 3vw;
+    height: 3vw;
+    cursor: pointer;
+}
+
+.logo:hover,.logo2:hover{
+    opacity: 50%;
+}
+
+.bouton_footer{
+    width: 3vw;
+    height: 6.5vh;
+    border: 1px solid white;
+    padding: 2px 5px;
+    border-radius: 20%;
+    font-family: "Azonix";
+    color: white;
+    font-size: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1080px) { 
+    .section1{
+        height: 80vh;
+    }
+}

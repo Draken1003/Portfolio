@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="loading/style_loading.css">
+    <link href="https://fonts.cdnfonts.com/css/azonix" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <title>Esteves Helder</title>
+
+</head>
+<body>
+
+    
+
+
+    <section class="section1">
+        <nav>
+            <ul>
+                <img src="img/logo.png" alt="">
+                <a href=""><li>Home</li></a>
+                <a href="projet.html"><li>Projet</li></a>
+                <a href="about_me.html"><li>About Me</li></a>
+            </ul>
+        </nav>
+        <span class="image">
+            <img src="img/fond.png" class="fond" alt="">
+            <h1 class="titre">Esteves</h1>
+            <h1 class="titre2">Helder</h1>
+            <h1 class="titre3">エステベス </h1>
+            <h1 class="titre4">ヘルダー</h1>
+        </span>
+        
+        <div class="menu2">
+            
+            <a href="https://www.linkedin.com/in/helder-esteves-b45088338/" target="_blank"><img src="img/linkedin.webp" class="logo" alt=""></a>
+            <a href="https://github.com/Draken1003?tab=repositories" target="_blank"><img src="img/github.svg" class="logo2" alt=""></a>
+            <span class="bouton_footer" onclick="footer_appear()">
+                INFO
+            </span>
+        </div>
+        
+    </section>
+    
+    <div class="footer" id="footer2">
+        <div>
+            <a href="https://iut.univ-gustave-eiffel.fr" target="_blank"><img src="img/iut-logo.png" class="logo_iut"width="10vw"></a>
+            <h2 class="text-footer">mail: held.esteves@gmail.com</h2>
+            <img src="img/logo.png" class="logo_footer" alt="">
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+
+
+        function footer_appear() {
+            const footer = document.getElementById("footer2");
+
+            if (footer.style.transform === "translateY(0px)") {
+                // Footer visible, on le fait disparaître
+                footer.style.animation = "desappear 0.5s linear";
+                footer.style.transform = "translateY(400px)";
+            } else {
+                // Footer caché, on le fait apparaître
+                footer.style.animation = "appear 0.5s linear";
+                footer.style.transform = "translateY(0px)";
+            }
+        }
+    </script>
+    
+</body>
+</html>

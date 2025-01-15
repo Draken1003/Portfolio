@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="about_me_style.css">
+    <link href="https://fonts.cdnfonts.com/css/azonix" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <title>Esteves Helder</title>
+
+</head>
+<body>
+        <header>
+            <nav>
+                <ul>
+                    <img src="img/logo.png" alt="">
+                    <a href="index.html"><li>Home</li></a>
+                    <a href="projet.html"><li>Projet</li></a>
+                    <a href=""><li>About Me</li></a>
+                </ul>
+            </nav>
+            
+            <div class="menu2">
+                <a href="https://www.linkedin.com/in/helder-esteves-b45088338/" target="_blank"><img src="img/linkedin.webp" class="logo" alt=""></a>
+                <a href="https://github.com/Draken1003?tab=repositories" target="_blank"><img src="img/github.svg" class="logo2" alt=""></a>
+                <span class="bouton_footer" onclick="footer_appear()">
+                    INFO
+                </span>
+            </div>
+        </header>
+        <section>
+            <h1 class="fond_projet">私について</h1>
+            <div class="container">
+                <div class="sous_container box">
+                    <h1>Présentation</h1>
+                    <p>
+                        Je m'appelle Helder Esteves, j'ai 18 ans et je suis actuellement en première année de BUT Informatique à l'IUT de Marne-la-Vallée.
+                        J'étudie l'informatique car je suis passionné par cela.<br><br>
+                        J'ai commencé à m'y intéresser en seconde, j'ai commencé par apprendre le langage C++, puis j'ai appris le HTML, CSS, Python et MySQL.<br><br>
+                        J'ai également appris à utiliser des outils comme Visual Studio Code ou encore Figma.<br><br>
+                        Par ailleurs, j'ai un grand intérêt pour le design.
+                    </p>
+                </div>
+    
+                <div class="sous_container2">
+                    <div class="competence box">
+                        <h1>Compétences</h1>
+                        <span class="competence_list">
+                            <img src="img/img_logo/python.svg" width="90vw" alt="">
+                            <img src="img/img_logo/html5.svg" width="90vw" alt="">
+                            <img src="img/img_logo/css3-alt.svg" width="90vw" alt="">
+                            <img src="img/img_logo/mysql.svg" width="90vw" alt="">
+                        </span>
+                        <span class="nom_logo">
+                            <p>Python</p>
+                            <p>HTML</p>
+                            <p>CSS</p>
+                            <p>MySQL</p>
+                        </span>
+                    </div>
+                    <div class="langue box">
+                        <h1>Niveaux Linguistiques</h1>
+                        <ul class="langue_list">
+                            <li>Français: Langue maternelle</li>
+                            <br>
+                            <li>Anglais: A2~B1</li>
+                            <br>
+                            <li>Espagnol: B1</li>
+                            <br>
+                            <li>Portugais: B2</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="parcours_scolaire box">
+                    <h1>Parcours Scolaire</h1>
+                    <ul>
+                        <li><h1>2020-2021</h1> Brevet des collèges <br> mention: Très Bien <br> <b>Collège Honoré de Balzac <br> Neuilly sur Marne</b></li>
+                        <li><h1>2023-2024</h1> Baccalauréat NSI/Mathématique <br> mention: Bien <br> <b>Lycée Georges Clémenceau <br> Villemomble</b></li>
+                        <li><h1>2024-2025</h1> BUT Informatique <br> <b>IUT Université Gustave Eiffel</b></li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </section>
+        
+
+    <div class="footer" id="footer2">
+        <div>
+            <a href="https://iut.univ-gustave-eiffel.fr" target="_blank"><img src="img/iut-logo.png" class="logo_iut"width="10vw"></a>
+            <h2 class="text-footer">mail: held.esteves@gmail.com</h2>
+            <img src="img/logo.png" class="logo_footer" alt="">
+        </div>
+    </div>
+    
+    <script>
+        function footer_appear() {
+            const footer = document.getElementById("footer2");
+
+            if (footer.style.transform === "translateY(0px)") {
+                // Footer visible, on le fait disparaître
+                footer.style.animation = "desappear 0.5s linear";
+                footer.style.transform = "translateY(400px)";
+            } else {
+                // Footer caché, on le fait apparaître
+                footer.style.animation = "appear 0.5s linear";
+                footer.style.transform = "translateY(0px)";
+            }
+        }
+    </script>
+    
+</body>
+</html>

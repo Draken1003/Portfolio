@@ -1,0 +1,223 @@
+
+/* ---------------------------------------------------------- */
+
+h1{
+    font-family: "Azonix";
+    color: white;
+    text-align: center;
+    font-variant: small-caps;
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+.container{
+    height: 75%;
+    width: 100%;
+    display: flex;
+    padding: 30px;
+    gap: 20px;
+    align-items: center;
+}
+
+.box{
+    background: rgba(62, 62, 62, 0.764);
+    backdrop-filter: blur( 2.5px );
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 10px;
+}
+
+.sous_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 45%;
+    padding: 15px;
+}
+
+.sous_container p{
+    font-family: "Arial";
+    color: white;
+    font-size: 1.25rem;
+    text-align: justify;
+    padding: 20px 75px;
+    font-variant: small-caps;
+}
+
+.sous_container2{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100%;
+    width: 30%;
+}
+
+.competence{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 20px;
+    height: 50%;
+}
+
+.competence h1 {
+    margin-bottom: 15px;
+}
+
+.competence_list{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60%;
+}
+
+.competence_list img{
+    filter: drop-shadow(0 0 0.75rem rgba(255, 255, 255, 0.512));
+}
+
+.nom_logo{
+    display: flex;
+    justify-content: space-around;
+}
+
+.nom_logo p{
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.121);
+    backdrop-filter: blur( 2.5px );
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 5px;
+
+    font-variant: small-caps;
+    font-family: "Azonix";
+    color: white;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.langue{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+    height: 50%;
+}
+
+.langue_list{
+    font-family: "Arial";
+    font-weight: bold;
+    font-variant: small-caps;
+    color: white;
+    font-size: 1.25rem;
+    list-style: none;
+}
+
+.parcours_scolaire{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 25%;
+    padding: 15px;
+}
+
+.parcours_scolaire ul{
+    list-style: none;
+    color: white;
+    font-family: Arial;
+    font-size: 1.25rem;
+    text-align: center;
+    padding: 0;
+}
+
+.parcours_scolaire ul li h1{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width:1480px) {
+    .sous_container p {
+        font-size: 0.75rem;
+    }
+
+    .competence_list img{
+        width: 5vw;
+        height: 5vw;
+    }
+
+    .nom_logo p{
+        font-size: 0.5rem;
+    }
+
+    .langue h1{
+        font-size: 1.25rem;
+        margin-bottom: 0;
+    }
+
+    .langue_list li{
+        font-size: 0.7rem;
+    }
+
+    .parcours_scolaire h1{
+        font-size: 1.25rem;
+    }
+
+    .parcours_scolaire ul li h1{
+        font-size: 1rem;
+    }
+
+    .parcours_scolaire ul li{
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width:1080px) {
+    
+    .container{
+        flex-direction: column;
+    }
+    
+    .sous_container,.sous_container2, .parcours_scolaire{
+        width: 100%;
+    }
+
+    .sous_container{
+        padding: 0 15px;
+    }
+    
+    .sous_container p {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .competence{
+        display: flex;
+        flex-direction: column;
+        padding: 0px 20px;
+        height: 50%;
+    }
+    
+    .competence_list img{
+        width: 10vw;
+        height: 10vw;
+    }
+
+    .nom_logo p{
+        font-size: 0.75rem;
+    }
+    
+    .langue{
+        padding: 5px 20px;
+    }
+
+    .langue_list li{
+        margin: 0;
+        padding: 0;
+        font-size: 1.25rem;
+    }
+
+    .parcours_scolaire ul li h1{
+        font-size: 1rem;
+    }
+
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_projet.css">
+    <link rel="stylesheet" href="all.css">
+    <link href="https://fonts.cdnfonts.com/css/azonix" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <title>Esteves Helder</title>
+
+</head>
+<body>
+    <h1 class="fond_projet">プロジェクト</h1>
+        <header>
+            
+            <nav>
+                <ul>
+                    <img src="img/logo.png" alt="">
+                    <a href="index.html"><li>Home</li></a>
+                    <a href=""><li>Projet</li></a>
+                    <a href="about_me.html"><li>About Me</li></a>
+                </ul>
+            </nav>
+            
+            <div class="menu2">
+                
+                <a href="https://www.linkedin.com/in/helder-esteves-b45088338/" target="_blank"><img src="img/linkedin.webp" class="logo" alt=""></a>
+                <a href="https://github.com/Draken1003?tab=repositories" target="_blank"><img src="img/github.svg" class="logo2" alt=""></a>
+                <span class="bouton_footer" onclick="footer_appear()">
+                    INFO
+                </span>
+            </div>
+        </header>
+
+    <section class="carrousel">
+            <span class="card" onclick="pop('popup1')">
+                <div>
+                    <img src="img/img_projet/site_home.png" class="home"  alt="">
+                    <h1>Site éducatif</h1>
+                    <p>Ce projet est l'un des plus gros que j'ai fais. Je me suis occupé du front et un amis du back-end. Ce projet avait pour but de créer un site avec des cours, des exercices et autres.</p>    
+                </div>
+                <span class="nom_logo">
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>React JS</p>
+                </span>
+            </span>
+
+            <div class="popup" id="popup1">
+                <div class="page">
+                    <img src="img/img_projet/site_cour.png" width="70%" alt="">
+                <img src="img/img_projet/site_exam.png"  width="70%" alt="">
+                </div>
+                <div class="connexion">
+                    <img src="img/img_projet/site_login.png"  width="40%" alt="">
+                    <img src="img/img_projet/site_sign_up.png"  width="40%" alt="">
+                </div>
+                <button onclick="pop('popup1')">X</button>
+            </div>
+            
+
+            <span class="card" onclick="pop('popup2')">
+                <div>
+                    <img src="img/img_projet/tetris.png" width="60%" alt="">
+                    <h1>Jeu Tetris</h1>
+                    <p>SAE qui a pour but de recréer le pilier du jeux vidéo Tetris avec différents modes de jeux.</p>
+                    
+                </div>
+               <span class="nom_logo">
+                    <p>Python</p>
+                    <p>Json</p>
+                </span>
+            </span>
+
+            <div class="popup" id="popup2">
+                <div class="page">
+                    <img src="img/img_projet/mode.png" width="70%" alt="">
+                <img src="img/img_projet/duo.png"  width="70%" alt="">
+                </div>
+                <div class="connexion">
+                    <img src="img/img_projet/pourrissement.png"  width="40%" alt="">
+                    <img src="img/img_projet/polyominos.png"  width="40%" alt="">
+                </div>
+                <button onclick="pop('popup2')">X</button>
+            </div>
+    </section>
+
+    <div class="footer" id="footer2">
+        <div>
+            <a href="https://iut.univ-gustave-eiffel.fr" target="_blank"><img src="img/iut-logo.png" class="logo_iut"width="10vw"></a>
+            <h2 class="text-footer">mail: held.esteves@gmail.com</h2>
+            <img src="img/logo.png" class="logo_footer" alt="">
+        </div>
+    </div>
+    
+    <script>
+        function footer_appear() {
+            const footer = document.getElementById("footer2");
+
+            if (footer.style.transform === "translateY(0px)") {
+                // Footer visible, on le fait disparaître
+                footer.style.animation = "desappear 0.5s linear";
+                footer.style.transform = "translateY(400px)";
+            } else {
+                // Footer caché, on le fait apparaître
+                footer.style.animation = "appear 0.5s linear";
+                footer.style.transform = "translateY(0px)";
+            }
+        }
+
+        function pop(id){
+            const card = document.getElementById(id)
+            if (card.style.visibility == "hidden"){
+                card.style.visibility = "visible"
+            }else{
+                card.style.visibility = "hidden"
+            }
+        }
+    </script>
+    
+</body>
+</html>
